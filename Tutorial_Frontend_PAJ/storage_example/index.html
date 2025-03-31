@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h2>Add Activity</h2>
+<section>
+    <form>
+        <label for="title">Activity Title:</label>
+        <input type="text" id="title" name="title" placeholder="Enter title" />
+        <label for="description">Activity Description:</label>
+        <input type="text" id="description" name="description" placeholder="Enter description"/>
+
+        <button type="button" onclick="addActivity(document.getElementById('title').value,
+        document.getElementById('description').value)"> Submit </button>
+        </form>
+</section>
+<br>
+<h2>Activity List</h2>
+<section id="activitylist">
+    <table border="1" id="activitytable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                <!-- rows to be added here -->
+                </tbody>
+            </table>
+</section>
+</body>
+</html>
